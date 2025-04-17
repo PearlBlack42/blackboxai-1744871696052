@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jenis Simpanan - Koperasi Karyawan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .table-fixed {
+            table-layout: fixed;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-6">
+    <div class="max-w-7xl mx-auto bg-white rounded shadow p-6">
+        <h2 class="text-xl font-bold mb-4">Jenis Simpanan</h2>
+        <div class="flex space-x-2 mb-4">
+            <button class="bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded font-semibold">Tambah</button>
+            <button class="bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded font-semibold">Edit</button>
+            <button class="bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded font-semibold">Hapus</button>
+            <button class="bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded font-semibold">Generate Simpanan</button>
+        </div>
+        <form class="grid grid-cols-3 gap-4 mb-4">
+            <div>
+                <label class="block font-semibold mb-1">JenisID</label>
+                <input type="text" name="jenis_id" class="w-full border border-gray-300 rounded px-2 py-1" />
+            </div>
+            <div>
+                <label class="block font-semibold mb-1">Keterangan</label>
+                <input type="text" name="keterangan" class="w-full border border-gray-300 rounded px-2 py-1" />
+            </div>
+            <div>
+                <label class="block font-semibold mb-1">Operator</label>
+                <select name="operator" class="w-full border border-gray-300 rounded px-2 py-1">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                </select>
+            </div>
+        </form>
+        <div class="overflow-x-auto">
+            <table class="table-fixed border border-gray-300 w-full text-sm">
+                <thead class="bg-gray-200">
+                    <tr>
+                        <th class="border border-gray-300 px-2 py-1 w-32">JenisID</th>
+                        <th class="border border-gray-300 px-2 py-1">Keterangan</th>
+                        <th class="border border-gray-300 px-2 py-1">Operator</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data rows go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
